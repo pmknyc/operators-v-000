@@ -1,7 +1,8 @@
 require 'pry'
 
 def unsafe?(speed)
-	if speed.between?(40,60)
+	if speed.to_i.between?(40,60)
+	binding.pry
 		false
 	else
 		true
